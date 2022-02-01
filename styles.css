@@ -1,0 +1,395 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'nfl-dolphins-regular';
+  src: url('font/nfldolph-webfont.woff2') format("woff2"),
+  url('font/nfldolph-webfont.woff') format("woff");
+}
+
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffd400;
+  margin: 0px;
+  width: 100%;
+}
+
+header{
+  display:flex;
+  margin: 5px;
+  margin-bottom: 7px;
+  background-color: #0f3fa9;
+  width: 982px;
+  text-align: center;
+}
+
+h1{
+  font-family: 'nfl-dolphins-regular';
+  color: white;
+  font-size: 3.6em;
+  border: solid ;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+  color: #f7ae15; 
+}
+
+h2{
+  margin:0px;
+  text-align: center;
+}
+
+h3{
+  margin:0px;
+  font-size:0.80rem;
+}
+
+main{
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height:700px;
+  background-color: ghostwhite;
+  box-shadow: 5px 0px 5px black, -5px 0px 5px black,0px 8px 10px black;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  flex-direction: column;
+}
+.promo{
+  background-color: red;
+    display: block;
+    font-size: 2rem;
+    box-shadow: 5px 0px 5px black;
+    width: 100%;
+    text-align: center;
+}
+
+.etagere{
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 980px;
+}
+
+.card-complete{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  margin-bottom:0px;
+  max-width:225px;
+  max-height: 300px;
+  z-index: 1; 
+}
+
+.card{
+  margin:0 auto;
+  width:225px;
+  height: 300px;
+  perspective: 1000px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 15px black;
+  box-sizing: border-box;
+  border: black solid 4px;
+}
+
+.card-inner {
+  position: absolute;
+  width: 225px;
+  height:300px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  min-height: 300px;
+  min-width: 225px;
+  border-radius:8px;
+  box-sizing: border-box;
+  border: black solid 4px;
+  object-fit: cover; /* Pour que les images gardent leurs ratios initials */
+}
+form{
+  color: black;
+  /* width: 180px;  */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  justify-content: center;
+  
+}
+.card-front, .card-back {
+  position: absolute;
+  height:300px;
+  width: 225px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius:8px;
+  background-size:cover;
+  background-position:center center;
+  display: flex;  
+}
+
+.card-front .card-content {
+  z-index: 1;
+  color:white;
+  border: black solid 3px;
+}
+
+.card-back{
+  transform: rotateY(180deg);
+  transform-origin: left;
+  background-color: grey;
+  position: relative;
+  left: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black solid 4px;
+  box-sizing: border-box;
+}
+      
+.card-front {
+  transition: opacity .6s;
+}
+
+.trait{
+  background-color: gray;
+  height: 10px;
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 3px 5px black;
+}
+
+.exitImg{
+  
+  width: 100%;
+  border: none;
+  min-height: none;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+.exit{
+  width: 30.169px;
+  height: 30.169px;
+  float: right;
+  margin-right: auto;
+  text-align: right;
+  right: 0;
+  position: absolute;
+  top: 0;
+  margin: 5px;
+  z-index: 3;
+}
+
+.bio{
+  justify-content: center;
+  display: flex;
+  max-width: 225px;
+  max-height: 300px;
+  align-items: center;
+  background-color: white;
+  min-height: 92%;
+  min-width: 90%;
+  margin: 5px;
+  border-radius: 5px;
+  color: black;
+  text-align: start;
+  padding: 2.245px;
+  overflow: hidden;
+  font-size: 0.76rem;
+  flex-direction: column;
+}
+.attaches{
+  position: absolute;
+  height: 300px;
+  width: 225px;
+  opacity: 1;
+}
+
+.disk{
+  position: relative;
+  display: block;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+.disk::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: grey;
+}
+/* Tout ce qui est appelé  -test ou qui finit par un t est une partie d'un trompe l'oeil de la carte */
+.card-complete-test{
+  display: flex;
+  margin: 0px;
+  cursor: pointer;
+  position: absolute;
+  align-items:stretch;
+  justify-content: center;
+  width: 450px;
+  height: 300px;
+  z-index:2
+  }
+
+.card-front-test{
+  width: 50%;
+  min-height: 300px;
+  border-radius:8px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: black solid 4px;
+}
+
+.card-back-test{
+  width: 50%;
+  position: relative;
+  border-radius:8px;
+  background-color: grey;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  border: black solid 4px;
+}
+
+.card-back-test img{
+  border: none;
+}
+.formt{
+  z-index: 2;
+  padding: 5px;
+}
+.formt .send{
+  font-size: 1.5rem;
+}
+
+.send{ 
+  cursor: pointer;
+  background-color: #0f3fa9 ;
+  color: white;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  border:none;
+}
+
+.send:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.biot{
+  justify-content: center;
+  display: flex;
+  max-width: 225px;
+  max-height: 300px;
+  align-items: center;
+  background-color: white;
+  min-height: 92%;
+  min-width: 90%;
+  margin: 5px;
+  border-radius: 5px;
+  color: black;
+  text-align: start;
+  padding: 5px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.attachest{
+  position: absolute;
+  height: 300px;
+  width: 225px;
+  opacity: 1;
+}
+
+.diskt{
+  position: relative;
+  display: block;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+.diskt::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: grey;
+}
+
+footer{
+ color: white;
+ display: flex;
+ width: 100%;
+ margin-right:0px;
+ margin-left:0px;
+ font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.volet-visible{
+  height: 22rem;
+  display: block;
+  width: 100%;
+  overflow:hidden;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0px -5px 5px black;
+  text-align: left;
+  padding: 0 20%;
+  text-decoration: none;
+}
+
+.volet-invisible{
+  height:2rem;
+  display: block;
+  width: 100%;
+  overflow:hidden;
+  cursor: pointer;
+  background-color: grey;
+  box-shadow: 0px -5px 5px black;
+  text-align: center;
+  text-decoration: none;
+}

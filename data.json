@@ -1,0 +1,58 @@
+[
+    {
+        "genre":"un film policier",
+        "title": "Se7en ",
+        "explication":"Parce que le climax de fin impose un dilemme moral au personnage de David (le protagoniste) qui ne sait plus s’il doit écouter sa raison ou ses sentiments. En ressort un moment de tensions extrême et d’anthologie pour le cinéma. La fameuse phrase « What’s in the box ? » résonne toujours dans ma tête. J’apprécie particulièrement le soin apporté par David Fincher à la psychologie des personnages dans ce film.",
+        "image":"images/seven.jpg",
+        "image2":"images/se7en.jpg"
+    },
+    {
+        "genre": "un film contemplatif",
+        "title":"into the Wilde",
+        "explication":"Car tout comme le protagoniste de ce film, je rêve de pouvoir m’échapper du quotidien pour partir en solitaire loin de l’agitation de la ville et de ce monde qui va à 100 à l’heure afin de me reconnecter à la nature, à moi-même et aux gens.",
+        "credit":"",
+        "image":"images/intothewilde.jpg",
+        "image2":"images/PeteLioyd_intothewild.jpg"},
+    {
+        "genre": "un film pour enfant",
+        "title": "The Lego Movie",
+        "explication":"Car la créativité a une part très importante dans ma vie, j’adore inventer et construire de nouvelles choses. Mais aussi, il faut l’admettre, parce que j’adore les legos !",
+        "credit":"",
+        "image":"images/legomovie.jpg",
+        "image2":"images/Nate_Gonzales.jpg"
+    },
+    {    
+        "genre":"un film de super héros",
+        "title": "The Amazing Spider-man 2",
+        "explication":"Parce que tout comme Peter Parker, j’adore grimper partout pour me poser en hauteur et contempler un paysage. Mais surtout parce que dans ce second volet, Spider-man apparaît plus humain dans ses rapports aux gens et c’est une qualité qui me semble importante.","credit":"",
+        "image":"images/spiderman.jpg",
+        "image2":"images/sonypictures_amazingspiderman.jpg"
+    },
+    {
+        "genre":"un film de science fiction",
+        "title": "Limitless",
+        "explication":"Car comme le personnage principal, il est primordial à mes yeux d’être toujours plus productif que la veille de jour en jour et de sans cesse faire mieux. De devenir meilleur de jour en jour.",
+        "credit":"","image":"images/limitless.jpg","image2":"images/ImaneR_limitless.jpg"
+    },
+    {
+        "genre":"une série de satire sociale",
+        "title": "Mr. Robot",
+        "explication":"Parce que cette série dépeint une réalité très proche de la nôtre mais très sombre avec une beauté que je n’ai jamais vue ailleurs et c’est ce qu’est l’art pour moi, pouvoir rendre magnifiques des émotions, des thèmes qui ne le sont pas.",
+        "credit":"",
+        "image":"images/mrrobot.jpg",
+        "image2":"images/visuasys_mrrobot.jpg"
+    },
+    {
+        "genre":"une série animée",
+        "title": "Rick and Morty",
+        "explication":"Car cette série est déjantée et remplie d’une certaine forme de folie qui je pense anime la plus-part d’entre nous ou tout du moins ma personne. Cette série n’a aucune limites dans sa façon de dire les choses, elle semble vraiment spontanée presque brute.","credit":"",
+        "image":"images/rickandmorty.jpg",
+        "image2": "images/rick-morty2.jpg"
+    },
+    {
+        "title":"",
+        "genre": "formulaire",
+        "explication":"",
+        "image":"images/nothing.jpg",
+        "image2":""
+        }]
